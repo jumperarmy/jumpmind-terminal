@@ -200,3 +200,69 @@ h1{
   }
 
 }
+.navbar{
+  width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 56px;
+  background:rgba(2,5,10,0.72);
+  border-bottom:1px solid rgba(0,255,225,0.22);
+  backdrop-filter:blur(14px);
+}
+
+.logo-container{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-decoration:none;
+}
+
+.nav-logo{
+  width:52px;
+  height:52px;
+  object-fit:contain;
+  filter:drop-shadow(0 0 12px rgba(0,255,225,0.35));
+}
+
+.logo-text{
+  color:#00ffe1;
+  font-weight:800;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+}
+
+.nav-links{
+  display:flex;
+  gap:26px;
+}
+
+.nav-links a{
+  color:#d7ffff;
+  text-decoration:none;
+  font-size:0.9rem;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.nav-links a:hover{
+  color:#00ffe1;
+}
+
+@media(max-width:700px){
+  .navbar{
+    padding:14px 20px;
+  }
+
+  .logo-text{
+    font-size:0.8rem;
+  }
+
+  .nav-links{
+    display:none;
+  }
+}
